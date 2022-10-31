@@ -31,6 +31,8 @@ function initNavigation() {
 
   ScrollTrigger.create({
     start: 100,
+    // scroll trigger will never achieve bottom state due to minus pixel so class will stay
+    end: "bottom bottom-=20",
     toggleClass: {
       targets: "body",
       className: "has-scrolled",
